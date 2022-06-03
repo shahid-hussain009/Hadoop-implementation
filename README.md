@@ -58,7 +58,6 @@ and add following code
 ``export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin``
 
 ``export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"``
-``
 
 Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
