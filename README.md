@@ -18,11 +18,15 @@
 #### authenticate the localhost
 ``ssh localhost``
 ## Download the hadoop
-``wget https://downloads.apache.org/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz``
+``wget https://downloads.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz``
 or
 download it from the link directly
 
-[Hadoop Link](https://downloads.apache.org/hadoop/common/)
+[Hadoop Link](https://downloads.apache.org/hadoop/common/hadoop-3.3.3/hadoop-3.3.3.tar.gz)
+### Extract the downloaded hadoop (Hadoop may be different version in you case)
+
+if you downloaded the hadoop from the link then move it to hadoopuser as we have already created hadoop user then extract
+``tar -xvzf hadoop-3.3.3.tar.gz``
 
 
 ## References
