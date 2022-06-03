@@ -82,12 +82,11 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
 then add
 
-``<property>
-
+``
+<property>
      <name>fs.defaultFS</name>
      
      <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
-     
  </property>
 ``
 
@@ -102,29 +101,23 @@ then add
 
 ``
 <property>
-     
      <name>dfs.replication</name>
      
      <value>1</value>
-
 </property>
  
 
 <property>
-      
       <name>dfs.name.dir</name>
        
        <value>file:///home/hadoopuser/hadoopdata/hdfs/namenode</value>
-
 </property>
  
 
 <property>
-      
       <name>dfs.data.dir</name>
       
       <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
-
 </property>``
    ### Open up the ``mapred-site.xml``
    ``nano $HADOOP_HOME/etc/hadoop/mapred-site.xml``
@@ -133,11 +126,9 @@ then add
    
    ``
   <property>
-  
        <name>mapreduce.framework.name</name>
        
        <value>yarn</value>
-       
   </property>
    ``
   ### Open yarn-site.xml
@@ -147,11 +138,9 @@ then add
    
 ``
 <property>
-
   <name>yarn.nodemanager.aux-services</name>
   
   <value>mapreduce_shuffle</value>
-  
 </property>
 ``
    
