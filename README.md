@@ -52,6 +52,19 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"``
 
 then  press “CTRL+O” + “CTRL+M” + “CTRL+X” to save the changes
 
+### Activate the “JAVA_HOME”
+``source ~/.bashrc``
+### Open up the environment variable file of Hadoop in nono text editor
+``nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh``
+
+then add
+
+``export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64``
+### Create two directories: datanode and namenode, inside the home directory of Hadoop
+``mkdir -p ~/hadoopdata/hdfs/namenode``
+``mkdir -p ~/hadoopdata/hdfs/datanode``
+
+
 
 ## References
 [hadoop-tutorial](https://www.projectpro.io/hadoop-tutorial/big-data-hadoop-tutorial)
