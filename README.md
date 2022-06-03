@@ -148,7 +148,7 @@ then add
    ``start-dfs.sh`` and ``start-yarn.sh`` then check the status by typing ``jps``
    
    ### Hadoop listens at the port 8088 and 9870, so you are required to permit these ports through the firewall
-   Now switch wih your main user then do the following setup
+   Now switch to your main user then do the following setup
    
    ``firewall-cmd --permanent --add-port=9870/tcp``
    
