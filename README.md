@@ -39,8 +39,7 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 
 and add following code 
 
-``
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+``export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 export HADOOP_HOME=/home/hadoopuser/hadoop
 
