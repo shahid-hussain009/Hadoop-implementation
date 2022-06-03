@@ -19,9 +19,7 @@
 ``ssh localhost``
 ## Download the hadoop
 ``wget https://downloads.apache.org/hadoop/common/hadoop-3.3.0/hadoop-3.3.0.tar.gz``
-
 or
-
 download it from the link directly
 
 [Hadoop Link](https://downloads.apache.org/hadoop/common/)
