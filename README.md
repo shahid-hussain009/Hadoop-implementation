@@ -128,10 +128,24 @@ then add
    
    ```html
   <property>
-       <name>mapreduce.framework.name</name>
-       
-       <value>yarn</value>
-  </property>
+   <name>mapreduce.framework.name</name>
+   <value>yarn</value>
+</property>
+
+<property>
+   <name>yarn.app.mapreduce.am.env</name>
+   <value>HADOOP_MAPRED_HOME=/home/hadoopuser/hadoop</value>
+</property>
+
+<property>
+   <name>mapreduce.map.env</name>
+   <value>HADOOP_MAPRED_HOME=/home/hadoopuser/hadoop</value>
+</property>
+
+<property>
+   <name>mapreduce.reduce.env</name>
+   <value>HADOOP_MAPRED_HOME=/home/hadoopuser/hadoop</value>
+</property>
    ```
   ### Open yarn-site.xml
    ``nano $HADOOP_HOME/etc/hadoop/yarn-site.xml``
