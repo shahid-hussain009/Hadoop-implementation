@@ -35,29 +35,29 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 ### Configure Java environment variable
 ``dirname $(dirname $(readlink -f $(which java)))``
 ### Open the “~/.bashrc” file in your “nano” text editor
-```js nano ~/.bashrc``
+```js nano ~/.bashrc```
 
 and add following code 
 
-```js export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64``
+```html export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
-``export HADOOP_HOME=/home/hadoopuser/hadoop``
+export HADOOP_HOME=/home/hadoopuser/hadoop
 
-``export HADOOP_INSTALL=$HADOOP_HOME``
+export HADOOP_INSTALL=$HADOOP_HOME
 
-``export HADOOP_MAPRED_HOME=$HADOOP_HOME``
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
 
-``export HADOOP_COMMON_HOME=$HADOOP_HOME``
+export HADOOP_COMMON_HOME=$HADOOP_HOME
 
-``export HADOOP_HDFS_HOME=$HADOOP_HOME``
+export HADOOP_HDFS_HOME=$HADOOP_HOME
 
-``export HADOOP_YARN_HOME=$HADOOP_HOME``
+export HADOOP_YARN_HOME=$HADOOP_HOME
 
-``export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native``
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 
-``export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin``
+export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 
-``export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"``
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"```
 
 Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
@@ -88,7 +88,7 @@ then add
      
      <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
  </property>
-``
+```
 
 Replace ``linuxhint-VBox`` with your hostname
 
@@ -118,7 +118,7 @@ then add
       <name>dfs.data.dir</name>
       
       <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
-</property>``
+</property>```
    ### Open up the ``mapred-site.xml``
    ``nano $HADOOP_HOME/etc/hadoop/mapred-site.xml``
    
@@ -130,7 +130,7 @@ then add
        
        <value>yarn</value>
   </property>
-   ``
+   ```
   ### Open yarn-site.xml
    ``nano $HADOOP_HOME/etc/hadoop/yarn-site.xml``
    
@@ -142,7 +142,7 @@ then add
   
   <value>mapreduce_shuffle</value>
 </property>
-``
+```
    
    then formet the node 
    
