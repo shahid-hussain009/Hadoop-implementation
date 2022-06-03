@@ -133,8 +133,11 @@ then add
    
    ``
   <property>
+  
        <name>mapreduce.framework.name</name>
+       
        <value>yarn</value>
+       
   </property>
    ``
   ### Open yarn-site.xml
@@ -144,8 +147,11 @@ then add
    
 ``
 <property>
+
   <name>yarn.nodemanager.aux-services</name>
+  
   <value>mapreduce_shuffle</value>
+  
 </property>
 ``
    
