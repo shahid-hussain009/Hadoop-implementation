@@ -83,9 +83,12 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 then add
 
 ``<property>
-                <name>fs.defaultFS</name>
-                <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
-        </property>
+
+     <name>fs.defaultFS</name>
+     
+     <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
+     
+ </property>
 ``
 
 Replace ``linuxhint-VBox`` with your hostname
