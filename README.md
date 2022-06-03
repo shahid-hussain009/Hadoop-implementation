@@ -39,16 +39,27 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 
 and add following code 
 
-``export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+``
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
 export HADOOP_HOME=/home/hadoopuser/hadoop
+
 export HADOOP_INSTALL=$HADOOP_HOME
+
 export HADOOP_MAPRED_HOME=$HADOOP_HOME
+
 export HADOOP_COMMON_HOME=$HADOOP_HOME
+
 export HADOOP_HDFS_HOME=$HADOOP_HOME
+
 export HADOOP_YARN_HOME=$HADOOP_HOME
+
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
-export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"``
+
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+``
 
 Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
