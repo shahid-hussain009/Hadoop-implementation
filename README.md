@@ -1,6 +1,6 @@
 # Hadoop-implementation
 ## Basic Setup
-sudo apt update
+``js sudo apt update ``
 ### Install JDK
 sudo apt install openjdk-11-jdk
 ### Check the jdk Version
