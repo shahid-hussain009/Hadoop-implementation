@@ -50,7 +50,7 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"``
 
-then  press “CTRL+O” + “CTRL+M” + “CTRL+X” to save the changes
+Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
 ### Activate the “JAVA_HOME”
 ``source ~/.bashrc``
@@ -60,9 +60,28 @@ then  press “CTRL+O” + “CTRL+M” + “CTRL+X” to save the changes
 then add
 
 ``export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64``
+
+Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 ### Create two directories: datanode and namenode, inside the home directory of Hadoop
 ``mkdir -p ~/hadoopdata/hdfs/namenode``
+
 ``mkdir -p ~/hadoopdata/hdfs/datanode``
+### Check you hostname
+``hostname``
+### Now, open up the ``core-site.xml`` file in your “nano” editor:
+``nano $HADOOP_HOME/etc/hadoop/core-site.xml``
+
+``<property>
+                <name>fs.defaultFS</name>
+                <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
+        </property>
+``
+
+Replace ``linuxhint-VBox`` with your hostname
+
+Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
+### Change the directory path of “datanode” and “namenode” in ``hdfs-site.xml``
+``nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml``
 
 
 
