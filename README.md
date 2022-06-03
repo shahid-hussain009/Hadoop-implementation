@@ -1,4 +1,4 @@
-# 1 Hadoop-implementation
+# 1- Hadoop-implementation
 ## Basic Setup
 `` sudo apt update ``
 #### Install JDK
@@ -174,7 +174,7 @@ then add
    
    for stoping hadoop type ``stop-dfs.sh`` and ``stop-yarn.sh``
    
-# 2 Steps to run WordCount Program on Hadoop
+# 2- Steps to run WordCount Program on Hadoop
 create a folder name Lab ``or whatever you want`` on Desktop and inside Lab create two more folder ``Input`` and ``tutorial_classes``
 
 create a file ``WordCount.java`` inside Lab folder
