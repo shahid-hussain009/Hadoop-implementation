@@ -35,7 +35,7 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 ### Configure Java environment variable
 ``dirname $(dirname $(readlink -f $(which java)))``
 ### Open the “~/.bashrc” file in your “nano” text editor
-``nano ~/.bashrc``
+```js nano ~/.bashrc``
 
 and add following code 
 
