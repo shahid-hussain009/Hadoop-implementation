@@ -125,12 +125,12 @@ then add
    
    then add
    
-   ``
+``
 <property>
   <name>yarn.nodemanager.aux-services</name>
   <value>mapreduce_shuffle</value>
 </property>
-   ``
+``
    
    then formet the node 
    
