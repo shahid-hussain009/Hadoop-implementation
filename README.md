@@ -83,6 +83,74 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 ### Change the directory path of “datanode” and “namenode” in ``hdfs-site.xml``
 ``nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml``
 
+then add 
+
+``<property>
+                <name>dfs.replication</name>
+                <value>1</value>
+        </property>
+ 
+        <property>
+                <name>dfs.name.dir</name>
+                <value>file:///home/hadoopuser/hadoopdata/hdfs/namenode</value>
+        </property>
+ 
+        <property>
+                <name>dfs.data.dir</name>
+                <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
+        </property>
+      ``
+   ### Open up the ``mapred-site.xml``
+   ``nano $HADOOP_HOME/etc/hadoop/mapred-site.xml``
+   
+   then add
+   
+   ``
+  <property>
+       <name>mapreduce.framework.name</name>
+       <value>yarn</value>
+  </property>
+   ``
+   ### Open yarn-site.xml
+   ``nano $HADOOP_HOME/etc/hadoop/yarn-site.xml``
+   
+   then add
+   
+   ``
+<property>
+  <name>yarn.nodemanager.aux-services</name>
+  <value>mapreduce_shuffle</value>
+</property>
+   ``
+   
+   then formet the node 
+   
+   ``hdfs namenode -format``
+   
+   Then start 
+   
+   ``start-dfs.sh``
+   
+   If you get the “Could resolve hostname error” then do below setup
+   ``sudo nano /etc/hosts`` and replace the hostname with yours hostname
+   
+   then again start
+   
+   ``start-dfs.sh`` and ``start-yarn.sh`` then check the status by typing ``jps``
+   
+   ### Hadoop listens at the port 8088 and 9870, so you are required to permit these ports through the firewall
+   Now switch wih your main user then do the following setup
+   
+   ``firewall-cmd --permanent --add-port=9870/tcp``
+   
+   ``firewall-cmd --permanent --add-port=8088/tcp``
+   
+   ``firewall-cmd --reload``
+   
+   Hadoop installation ha done and open the browser and type ``localhost:9870`` and ``localhost:8088``
+   
+   for stoping hadoop type ``stop-dfs.sh`` and ``stop-yarn.sh``
+
 
 
 ## References
