@@ -35,7 +35,7 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 ### Configure Java environment variable
 ``dirname $(dirname $(readlink -f $(which java)))``
 ### Open the “~/.bashrc” file in your “nano” text editor
-```js nano ~/.bashrc```
+`` nano ~/.bashrc``
 
 and add following code 
 
@@ -57,7 +57,8 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 
-export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"```
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+```
 
 Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
@@ -118,7 +119,8 @@ then add
       <name>dfs.data.dir</name>
       
       <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
-</property>```
+</property>
+```
    ### Open up the ``mapred-site.xml``
    ``nano $HADOOP_HOME/etc/hadoop/mapred-site.xml``
    
