@@ -39,7 +39,7 @@ if you downloaded the hadoop from the link then move it to hadoopuser as we have
 
 and add following code 
 
-``export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64``
+```js export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64``
 
 ``export HADOOP_HOME=/home/hadoopuser/hadoop``
 
@@ -82,7 +82,7 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
 then add
 
-``
+```html
 <property>
      <name>fs.defaultFS</name>
      
@@ -99,7 +99,7 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 
 then add 
 
-``
+```html
 <property>
      <name>dfs.replication</name>
      
@@ -124,7 +124,7 @@ then add
    
    then add
    
-   ``
+   ```html
   <property>
        <name>mapreduce.framework.name</name>
        
@@ -136,7 +136,7 @@ then add
    
    then add
    
-``
+```html
 <property>
   <name>yarn.nodemanager.aux-services</name>
   
