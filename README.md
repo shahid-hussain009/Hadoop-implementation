@@ -1,21 +1,21 @@
 # Hadoop-implementation
 ## Basic Setup
 `` sudo apt update ``
-### Install JDK
+#### Install JDK
 ``sudo apt install openjdk-11-jdk``
-### Check the jdk Version
+#### Check the jdk Version
 ``java -version``
-### Make new user
+#### Make new user
 ``sudo adduser hadoopuser``
-### Switch new User
+#### Switch new User
 ``su - hadoopuser``
-### Generating private and public key pairs
+#### Generating private and public key pairs
 ``ssh-keygen -t rsa``
-### Add these key pairs to the ssh authorized_keys
+#### Add these key pairs to the ssh authorized_keys
 ``cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys``
-### Read and Write permissions
+#### Read and Write permissions
 ``chmod 777 ~/.ssh/authorized_keys``
-### authenticate the localhost
+#### authenticate the localhost
 ``ssh localhost``
 
 
