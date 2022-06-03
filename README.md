@@ -80,6 +80,8 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 ### Now, open up the ``core-site.xml`` file in your “nano” editor:
 ``nano $HADOOP_HOME/etc/hadoop/core-site.xml``
 
+then add
+
 ``<property>
                 <name>fs.defaultFS</name>
                 <value>hdfs://hadoop.linuxhint-VBox.com:9000</value>
@@ -89,26 +91,38 @@ Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
 Replace ``linuxhint-VBox`` with your hostname
 
 Then  press ``CTRL+O`` + ``CTRL+M`` + ``CTRL+X`` to save the changes
-### Change the directory path of “datanode” and “namenode” in ``hdfs-site.xml``
+### Change the directory path of “datanode” and “namenode” in hdfs-site.xml
+
 ``nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml``
 
 then add 
 
-``<property>
-                <name>dfs.replication</name>
-                <value>1</value>
-        </property>
+``
+<property>
+     
+     <name>dfs.replication</name>
+     
+     <value>1</value>
+
+</property>
  
-        <property>
-                <name>dfs.name.dir</name>
-                <value>file:///home/hadoopuser/hadoopdata/hdfs/namenode</value>
-        </property>
+
+<property>
+      
+      <name>dfs.name.dir</name>
+       
+       <value>file:///home/hadoopuser/hadoopdata/hdfs/namenode</value>
+
+</property>
  
-        <property>
-                <name>dfs.data.dir</name>
-                <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
-        </property>
-      ``
+
+<property>
+      
+      <name>dfs.data.dir</name>
+      
+      <value>file:///home/hadoopuser/hadoopdata/hdfs/datanode</value>
+
+</property>``
    ### Open up the ``mapred-site.xml``
    ``nano $HADOOP_HOME/etc/hadoop/mapred-site.xml``
    
@@ -120,7 +134,7 @@ then add
        <value>yarn</value>
   </property>
    ``
-   ### Open yarn-site.xml
+  ### Open yarn-site.xml
    ``nano $HADOOP_HOME/etc/hadoop/yarn-site.xml``
    
    then add
