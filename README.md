@@ -1,4 +1,4 @@
-# Hadoop-implementation
+# 1 Hadoop-implementation
 ## Basic Setup
 `` sudo apt update ``
 #### Install JDK
@@ -174,7 +174,7 @@ then add
    
    for stoping hadoop type ``stop-dfs.sh`` and ``stop-yarn.sh``
    
-# Steps to run WordCount Program on Hadoop
+# 2 Steps to run WordCount Program on Hadoop
 create a folder name Lab ``or whatever you want`` on Desktop and inside Lab create two more folder ``Input`` and ``tutorial_classes``
 
 create a file ``WordCount.java`` inside Lab folder
@@ -186,14 +186,14 @@ mkdir Lab
 mkdir Lab/Input
 mkdir Lab/tutorial_classes
 ```
-# Type the following command to export the hadoop classpath into bash
+### Type the following command to export the hadoop classpath into bash
 ``export HADOOP_CLASSPATH=$(hadoop classpath)``
 
 and make sure it is exported
 
 ``echo $HADOOP_CLASSPATH``
 
-# Create these directories on HDFS 
+### Create these directories on HDFS 
 ```js
 hadoop fs -mkdir /WordCountTutorial 
 hadoop fs -mkdir /WordCountTutorial/Input
