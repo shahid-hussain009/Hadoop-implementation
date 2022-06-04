@@ -228,12 +228,13 @@ hadoop fs -put Lab/Input/input.txt /WordCountTutorial/Input
 
 ### Output the result
 
-`` hadoop dfs -cat /WordCountTutorial/Output/* ``
+`` hdfs dfs -cat /WordCountTutorial/Output/* ``
 
 
 ## References
-[hadoop-tutorial](https://www.projectpro.io/hadoop-tutorial/big-data-hadoop-tutorial)
+[Hadoop Installation setup](https://linuxhint.com/install-apache-hadoop-ubuntu/)
 
-[hadoop-tutorial 2](https://docs.google.com/document/d/1-BKY9iBpkm2dSbO7OKc33JBa4CZymOCiwl1EWaFqeBQ/edit)
 
-[hadoop-tutorial 3](https://linuxhint.com/install-apache-hadoop-ubuntu/))
+[Hadoop Installation with word count example](https://docs.google.com/document/d/1-BKY9iBpkm2dSbO7OKc33JBa4CZymOCiwl1EWaFqeBQ/edit)
+
+
